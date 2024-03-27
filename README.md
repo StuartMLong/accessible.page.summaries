@@ -1,7 +1,3 @@
-Accessible Page Summary
-
-The Problem
-
 Preliminary information about Web pages is a vital need for screen reader users. Because screen reader users need a fast and simple way to determine what Web pages are about. Their only option is to tab from heading to heading and alt text tag to alt text tag. While sighted users can make fast determinations about Web page content in less than two seconds. Not only that, bots have had access to summary information about Web page content for decades. Except the preliminary content bots have been getting is low quality (SEO, click bait) and not good enough to meet the needs of screen reader users. That means the needs of screen reader users are not being fulfilled.
 
 The Solution
@@ -13,7 +9,7 @@ Features
 The default configuration is opt-out, requiring screen reader users to opt-in.
 Accessible Page Summaries cannot be seen by sighted users and will not alter the appearance of standards compliant Web pages.
 Accessible Page Summaries have no dependencies so they will always work without fail and work offline too. Being integrated into each Web page means it will never be subjected to URL and redirect errors.
-100% WCAG 2.1 AAA compliant. 
+100% WCAG 2.1 AAA compliant.
 
 How It Works
 
@@ -35,10 +31,15 @@ The Accessible Page Summary should be a WCAG requirement. It might also make sen
 
 https://www.gofundme.com/help-me-help-the-blind-use-the-web
 
+How To Use
+
+1. The CSS must be included in the head section of the Web page. Never add it to a dependency CSS file.
+The CSS is for all variations of the Accessible Page Summary.
+
+2. The HTML is added to the Web page immediately following the h1 tag.
 <code><!-- Accessible Page Summary CSS - BEGIN -->
 <style>/* Opt-Out (default) */.ADA-ps {display: none}/* Opt-In (selectable) */.Summary-Opt-In:focus+.ADA-ps {display: block}/* WCAG 2.1 AAA */.ada-ps-css-01 {background: #fff; color: #000;display: inline-block; font-size: 1.5rem; line-height: 150%; margin-left: -3000rem; position: absolute; z-index: 997}</style>
 <!-- Accessible Page Summary CSS - END --></code>
-
 <code><!-- FOR TYPICAL WEB PAGES - ADA P.S. 1 -->
 <!-- Accessible Page Summary - BEGIN -->
 <!-- Passed WCAG 2.1 AAA 08/25/2023 -->
@@ -59,7 +60,6 @@ https://www.gofundme.com/help-me-help-the-blind-use-the-web
     That completes the Summary. The Web page content starts now.</p>
     </section></section>
 <!-- Accessible Page Summary - END --></code>
-
 <code><!-- FOR 100% TEXT WEB PAGES - ADA P.S. 2 -->
 <!-- Accessible Page Summary - BEGIN -->
 <!-- Passed WCAG 2.1 AAA 08/25/2023 -->
@@ -80,7 +80,6 @@ https://www.gofundme.com/help-me-help-the-blind-use-the-web
     The Web page content starts now.</p>
     </section></section>
 <!-- Accessible Page Summary - END --></code>
-
 <code><!-- FOR 100% IMAGES WEB PAGES - ADA P.S. 3 -->
 <!-- Accessible Page Summary - BEGIN -->
 <!-- Passed WCAG 2.1 AAA 08/25/2023 -->
@@ -101,7 +100,6 @@ https://www.gofundme.com/help-me-help-the-blind-use-the-web
     The Web page content starts now.</p>
     </section></section>
 <!-- Accessible Page Summary - END --></code>
-
 <code><!-- FOR 100% INFOGRAPHIC WEB PAGES - ADA P.S. 4 -->
 <!-- Accessible Page Summary - BEGIN -->
 <!-- Passed WCAG 2.1 AAA 08/25/2023 -->
@@ -134,4 +132,3 @@ https://www.gofundme.com/help-me-help-the-blind-use-the-web
     That completes the Infographic.</p>
     </section></section>
 <!-- Accessible Page Summary - END --></code>
-
