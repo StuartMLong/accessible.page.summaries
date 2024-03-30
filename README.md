@@ -1,3 +1,5 @@
+The Problem
+
 Preliminary information about Web pages is a vital need for screen reader users. Because screen reader users need a fast and simple way to determine what Web pages are about. Their only option is to tab from heading to heading and alt text tag to alt text tag. While sighted users can make fast determinations about Web page content in less than two seconds. Not only that, bots have had access to summary information about Web page content for decades. Except the preliminary content bots have been getting is low quality (SEO, click bait) and not good enough to meet the needs of screen reader users. That means the needs of screen reader users are not being fulfilled.
 
 The Solution
