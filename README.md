@@ -31,7 +31,7 @@ The variations provided here are for Web pages. More work is needed to develop A
 
 The Accessible Page Summary should be a WCAG requirement. It might also make sense to include the Accessible Page Summary as fundamental to HTML5.
 
-https://www.gofundme.com/help-me-help-the-blind-use-the-web
+https://stuartmlong.github.io/Accessible-Page-Summary
 
 How To Use
 
@@ -151,3 +151,5 @@ For 100% Infographic Web Pages
     That completes the Infographic.</p>
     </section></section>
 <!-- Accessible Page Summary - END --></code>
+
+https://www.gofundme.com/help-me-help-the-blind-use-the-web
