@@ -1,10 +1,12 @@
-The Problem
+The Problem Is Unintended Systemic Bias
 
-Preliminary information about Web pages is a vital need for screen reader users. Because screen reader users need a fast and simple way to determine what Web pages are about. Their only option is to tab from heading to heading and alt text tag to alt text tag. While sighted users can make fast determinations about Web page content in less than two seconds. Not only that, bots have had access to summary information about Web page content for decades. Except the preliminary content bots have been getting is low quality (SEO, click bait) and not good enough to meet the needs of screen reader users. That means the needs of screen reader users are not being fulfilled.
+Existing technology is systemically denying blind screen reader users an equal user experience. Because summary information about Web pages is being withheld from blind assistive technology users. Conversely, robots have had access to summary information in the form of meta description tags, open graph tags and SEO markup for many years. While sighted Web page users can often determine when a Web page is of interest to them in under three seconds. Yet blind screen reader users have been expected to tab from heading to heading and alt text to alt text, literally flying blind through HTML, in order to determine when a Web page is of interest to them. To make blind assistive technology users equal to sited users and robots, I'm proposing the adoption of Accessible Page Summaries. Because including a brief summary, along with information about content size, will allow blind screen reader users to finally make quick determinations about Web pages, just like sited users and robots have been able to do for a long time.
+
+Why not rely on open graph and meta description tags for summarized content? Because the needs of search engines and the needs of blind assistive technology users are fundamentally different. Basically, SEO is a methodical reaction to every Web page jockeying for position on Search Engine Results Pages. Which is why open graph and meta description tags attempt to include every relevant search term, in order to increase the odds of click through's. What blind screen reader users need is not a competition for their attention. They need concise summaries that get right to the point, composed specifically for humans, and valid information about content length.
 
 The Solution
 
-Announcing the Accessible Page Summary, an innovative way to provide high quality preliminary information (who, what, where, when and why) that is intended specifically to serve the needs of screen reader users. It can even provide information about content size.
+Introducing Accessible Page Summaries, an innovative way to provide high quality preliminary information (who, what, where, when and why) including content size, intended specifically to serve the needs of blind assistive technology users.
 
 Features
 
@@ -24,6 +26,10 @@ The included CSS does three things. 1. It provides functionality to open the Acc
 Because CSS is fundamental to HTML, CSS was chosen over Java script, to handle the opt-in "open" function that can be selected by screen reader users.
 
 Here is why the CSS must be included in the head section. Because when the functionality of the CSS is sourced from a dependency CSS file it may not function offline, may not function due to CDN failure, may fail due to redirect errors and may fail as a result of DNS errors. By being included in the head section, and by being 100% free of dependencies, the CSS opt-in "open" function cannot fail, the summary will always remain off screen, and will be WCAG 2.1 AAA compliant at all times.
+
+What Else Is Possible?
+
+Future versions could be opened by an "i" for information button, to be included in every Web browser, intended for sited users, that would open complete Accessible Page Summary content in a sidebar. Then everyone will be able to benefit from Accessible Page Summaries.
 
 What Happens Next
 
