@@ -31,7 +31,7 @@ What Else Is Possible?
 
 Future versions could be opened by an "i" for information button, to be included in every Web browser, intended for sited users, that would open complete Accessible Page Summary content in a sidebar. Then everyone will be able to benefit from Accessible Page Summaries.
 
-What Happens Next
+What Happens Next?
 
 The variations provided here are for Web pages. More work is needed to develop Accessible Page Summaries for PDF's, Ebooks, and other document types. It is my hope that talented engineers will be inspired by this open source project and help make it happen.
 
