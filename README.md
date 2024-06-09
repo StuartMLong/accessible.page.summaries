@@ -37,7 +37,7 @@ The variations provided here are for Web pages. More work is needed to develop A
 
 The Accessible Page Summary should be a WCAG requirement. It might also make sense to include the Accessible Page Summary as fundamental to HTML5.
 
-<a href="https://stuartmlong.github.io/accessible.page.summaries/">https://ada-ps.org</a>
+<a href="https://stuartmlong.github.io/accessible.page.summaries/">Visit the ADA P.S. Web site.</a>
 
 How To Use
 
