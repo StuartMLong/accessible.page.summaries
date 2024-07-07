@@ -15,8 +15,11 @@
     <meta http-equiv="content-security-policy" content="script-src 'none'; frame-ancestors 'none'">
     <script> if (self === top) { var antiClickjack = document.getElementById("antiClickjack"); antiClickjack.parentNode.removeChild(antiClickjack); } else { top.location = self.location;} </script>
     <!-- Cache -->
-    <!-- header("Cache-Control: public"); header("Pragma: cache"); -->
+    <!-- header("Cache-Control: public"); header("Pragma: no-cache"); -->
     <!-- meta http-equiv="cache-control" content="public" -->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="https://adasummary.top/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://adasummary.top/img/favicon-32x32.png">
