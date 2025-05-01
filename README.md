@@ -50,8 +50,10 @@ I urge the World Wide Web Consortium (W3C) to consider incorporating Accessible 
 
 <strong>For Typical Web Pages</strong>
 <code><!-- Accessible Page Summary CSS - BEGIN -->
+<strong>CSS</strong>
 <style>/* Opt-Out (default) */.ADA-ps {display: none}/* Opt-In (selectable) */.Summary-Opt-In:focus+.ADA-ps {display: block}/* WCAG 2.1 AAA */.ada-ps-css-01 {background: #fff; color: #000;display: inline-block; font-size: 1.5rem; line-height: 150%; margin-left: -3000rem; position: absolute; z-index: 997}</style>
 <!-- Accessible Page Summary CSS - END -->
+<strong>HTML</strong>
 <!-- FOR TYPICAL WEB PAGES - ADA P.S. 1 -->
 <!-- Accessible Page Summary - BEGIN -->
 <!-- Passed WCAG 2.1 AAA 08/25/2023 -->
@@ -74,8 +76,10 @@ I urge the World Wide Web Consortium (W3C) to consider incorporating Accessible 
 <!-- Accessible Page Summary - END --></code>
 <strong>For 100% Text Web Pages</strong>
 <code><!-- Accessible Page Summary CSS - BEGIN -->
+<strong>CSS</strong>
 <style>/* Opt-Out (default) */.ADA-ps {display: none}/* Opt-In (selectable) */.Summary-Opt-In:focus+.ADA-ps {display: block}/* WCAG 2.1 AAA */.ada-ps-css-01 {background: #fff; color: #000;display: inline-block; font-size: 1.5rem; line-height: 150%; margin-left: -3000rem; position: absolute; z-index: 997}</style>
 <!-- Accessible Page Summary CSS - END -->
+<strong>HTML</strong>
 <!-- FOR 100% TEXT WEB PAGES - ADA P.S. 2 -->
 <!-- Accessible Page Summary - BEGIN -->
 <!-- Passed WCAG 2.1 AAA 08/25/2023 -->
@@ -98,8 +102,10 @@ I urge the World Wide Web Consortium (W3C) to consider incorporating Accessible 
 <!-- Accessible Page Summary - END --></code>
 <strong>For 100% Images Web Pages</strong>
 <code><!-- Accessible Page Summary CSS - BEGIN -->
+<strong>CSS</strong>
 <style>/* Opt-Out (default) */.ADA-ps {display: none}/* Opt-In (selectable) */.Summary-Opt-In:focus+.ADA-ps {display: block}/* WCAG 2.1 AAA */.ada-ps-css-01 {background: #fff; color: #000;display: inline-block; font-size: 1.5rem; line-height: 150%; margin-left: -3000rem; position: absolute; z-index: 997}</style>
 <!-- Accessible Page Summary CSS - END -->
+<strong>HTML</strong>
 <!-- FOR 100% IMAGES WEB PAGES - ADA P.S. 3 -->
 <!-- Accessible Page Summary - BEGIN -->
 <!-- Passed WCAG 2.1 AAA 08/25/2023 -->
@@ -122,8 +128,10 @@ I urge the World Wide Web Consortium (W3C) to consider incorporating Accessible 
 <!-- Accessible Page Summary - END --></code>
 <strong>For 100% Infographic Web Pages</strong>
 <code><!-- Accessible Page Summary CSS - BEGIN -->
+<strong>CSS</strong>
 <style>/* Opt-Out (default) */.ADA-ps {display: none}/* Opt-In (selectable) */.Summary-Opt-In:focus+.ADA-ps {display: block}/* WCAG 2.1 AAA */.ada-ps-css-01 {background: #fff; color: #000;display: inline-block; font-size: 1.5rem; line-height: 150%; margin-left: -3000rem; position: absolute; z-index: 997}</style>
 <!-- Accessible Page Summary CSS - END -->
+<strong>HTML</strong>
 <!-- FOR 100% INFOGRAPHIC WEB PAGES - ADA P.S. 4 -->
 <!-- Accessible Page Summary - BEGIN -->
 <!-- Passed WCAG 2.1 AAA 08/25/2023 -->
