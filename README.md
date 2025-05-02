@@ -190,6 +190,3 @@ The Web page content starts now.</p>
 </section></section>
 
 <!-- Accessible Page Summary - END -->
-```
-
----
