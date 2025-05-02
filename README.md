@@ -1,161 +1,190 @@
-The Problem Is Unintended Systemic Bias
+# Enhancing Web Accessibility: A Proposal for Accessible Page Summaries in HTML5
 
-Existing technology is systemically denying blind screen reader users an equal user experience. Because summary information about Web pages is being withheld from blind assistive technology users. Conversely, robots have had access to summary information in the form of meta description tags, open graph tags and SEO markup for many years. While sighted Web page users can often determine when a Web page is of interest to them in under three seconds. Yet blind screen reader users have been expected to tab from heading to heading and alt text to alt text, literally flying blind through HTML, in order to determine when a Web page is of interest to them. To make blind assistive technology users equal to sited users and robots, I'm proposing the adoption of Accessible Page Summaries. Because including a brief summary, along with information about content size, will allow blind screen reader users to finally make quick determinations about Web pages, just like sited users and robots have been able to do for a long time.
+## The Imperative for Inclusive Design
 
-Why not rely on open graph and meta description tags for summarized content? Because the needs of search engines and the needs of blind assistive technology users are fundamentally different. Basically, SEO is a methodical reaction to every Web page jockeying for position on Search Engine Results Pages. Which is why open graph and meta description tags attempt to include every relevant search term, in order to increase the odds of click through's. What blind screen reader users need is not a competition for their attention. They need concise summaries that get right to the point, composed specifically for humans, and valid information about content length.
+The internet has become an indispensable resource for information, communication, and participation in modern society. It is crucial that the web is accessible to everyone, regardless of their abilities. 
 
-The Solution
+Currently, blind screen reader users face a significant barrier to efficient web browsing. Unlike sighted users who can quickly scan a page to determine its relevance, screen reader users often must navigate through extensive content to understand the page's purpose. This creates an unequal user experience that must be addressed.
 
-Introducing Accessible Page Summaries, an innovative way to provide high quality preliminary information (who, what, where, when and why) including content size, intended specifically to serve the needs of blind assistive technology users.
+## The Case for Accessible Page Summaries
 
-Features
+I propose the adoption of **Accessible Page Summaries** as a standard feature within HTML5. These summaries are brief, human-centered descriptions of a web page's content — including key information such as the topic, scope, and content length — specifically designed to provide screen reader users the same rapid assessment capabilities that sighted users and search engines already enjoy.
 
-The default configuration is opt-out, requiring screen reader users to opt-in.
-Accessible Page Summaries cannot be seen by sighted users and will not alter the appearance of standards compliant Web pages.
-Accessible Page Summaries have no dependencies so they will always work without fail and work offline too. Being integrated into each Web page means it will never be subjected to URL and redirect errors.
-100% WCAG 2.1 AAA compliant.
+### Why Not Leverage Existing Meta Descriptions?
 
-How It Works
+While meta descriptions and Open Graph tags offer some summary information, they are mainly aimed at SEO. These descriptions are crafted to maximize click-through rates and often include a wide range of keywords. This makes them less effective for screen reader users seeking concise and relevant information. 
 
-By design, the Accessible Page Summary is positioned so far to one side that no one can see it and it will not change the appearance of any Web page. When screen reader users visit a Web page with an Accessible Page Summary, they have the option to open it and access the preliminary content, or by default, continue past it when revisiting a Web page.
+Accessible Page Summaries, however, prioritize clarity, brevity, and directness, addressing the specific needs of blind users.
 
-Risks and Mitigation
+## Introducing Accessible Page Summaries: A User-Centric Solution
 
-The included CSS does three things. 1. It provides functionality to open the Accessible Page Summary. 2. It positions the Accessible Page Summary off screen. 3. It formats the Accessible Page Summary to pass WCAG 2.1 AAA.
+Accessible Page Summaries offer a practical way to bridge the accessibility gap. By providing screen reader users with concise summaries and content length information, they empower users to make informed decisions about which pages to explore, improving their browsing experience.
 
-Because CSS is fundamental to HTML, CSS was chosen over Java script, to handle the opt-in "open" function that can be selected by screen reader users.
+### Key Features
 
-Here is why the CSS must be included in the head section. Because when the functionality of the CSS is sourced from a dependency CSS file it may not function offline, may not function due to CDN failure, may fail due to redirect errors and may fail as a result of DNS errors. By being included in the head section, and by being 100% free of dependencies, the CSS opt-in "open" function cannot fail, the summary will always remain off screen, and will be WCAG 2.1 AAA compliant at all times.
+- **Opt-in by Default**: Screen reader users can choose to access the summary.
+- **Non-Intrusive Design**: Invisible to sighted users; does not alter web page appearance.
+- **Zero Dependencies**: Functions offline without external resources.
+- **Integrated Implementation**: Embeds summaries within the page to avoid URL/redirect errors.
+- **WCAG 2.1 AAA Compliance**: Adheres to the highest accessibility standards.
 
-What Else Is Possible?
+## Technical Implementation
 
-Future versions could be opened by an "i" for information button, to be included in every Web browser, intended for sited users, that would open complete Accessible Page Summary content in a sidebar. Then everyone will be able to benefit from Accessible Page Summaries.
+The implementation uses CSS to position the summary off-screen and enable opt-in functionality. Including the CSS in the `<head>` section ensures consistent, offline functionality while maintaining WCAG 2.1 AAA compliance.
 
-What Happens Next?
+## Future Possibilities
 
-The variations provided here are for Web pages. More work is needed to develop Accessible Page Summaries for PDF's, Ebooks, and other document types. It is my hope that talented engineers will be inspired by this open source project and help make it happen.
+The Accessible Page Summaries concept can be expanded to benefit all users. Imagine browser features that display summaries in a sidebar, providing instant insights into any web page — empowering everyone to make informed browsing decisions.
 
-The Accessible Page Summary should be a WCAG requirement. It might also make sense to include the Accessible Page Summary as fundamental to HTML5.
+## Call to Action
 
-<a href="https://adasummary.top">Visit the ADA P.S. Web site.</a>
+This project is a starting point. Further development is needed to extend Accessible Page Summaries to other document types like PDFs and ebooks. Talented engineers and accessibility advocates are invited to contribute to this open-source initiative and make the web more inclusive for everyone.
 
-How To Use
+## Recommendation
 
-1. The CSS must be included in the head section of the Web page. Never add it to a dependency CSS file.
-2. The HTML is added to the Web page immediately following the h1 tag.
-3. Keep the preliminary information brief and always include who, what, where, when and why.
-4. Conclude the summary with information about content size, such as a word count, running time, long read, short read, etc.
+I urge the **World Wide Web Consortium (W3C)** to consider incorporating Accessible Page Summaries as a requirement within **WCAG guidelines** and as a fundamental element of **HTML5**. By doing so, the web will truly become an accessible and equitable resource for all users.
 
-For Typical Web Pages
-<code><!-- Accessible Page Summary CSS - BEGIN -->
-<style>/* Opt-Out (default) */.ADA-ps {display: none}/* Opt-In (selectable) */.Summary-Opt-In:focus+.ADA-ps {display: block}/* WCAG 2.1 AAA */.ada-ps-css-01 {background: #fff; color: #000;display: inline-block; font-size: 1.5rem; line-height: 150%; margin-left: -3000rem; position: absolute; z-index: 997}</style>
+---
+
+## Code Examples
+
+### For Typical Web Pages
+
+```html
+<!-- Accessible Page Summary CSS - BEGIN -->
+<style>
+/* Opt-Out (default) */
+.ADA-ps { display: none }
+/* Opt-In (selectable) */
+.Summary-Opt-In:focus + .ADA-ps { display: block }
+/* WCAG 2.1 AAA */
+.ada-ps-css-01 {
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 150%;
+  margin-left: -3000rem;
+  position: absolute;
+  z-index: 997;
+}
+</style>
 <!-- Accessible Page Summary CSS - END -->
-<!-- FOR TYPICAL WEB PAGES - ADA P.S. 1 -->
-<!-- Accessible Page Summary - BEGIN -->
-<!-- Passed WCAG 2.1 AAA 08/25/2023 -->
-    <section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
-    <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open. Then use the down arrow.</h2>
-    <button aria-pressed="false" value="Open" class="Summary-Opt-In">Open</button>
-    <section role="complementary" aria-label="Note about usage" class="ADA-ps">
-    <p><!-- description -->
-    Web Page Description.<br>
-    Replace this line with a Description of the Web page that does not duplicate the meta description tag.</p>
-    <p><!-- alt text summary -->
-    Alt Text Summary.<br>
-    Replace this line with a very brief summation of all images.</p>
-    <p><!-- content size -->
-    Content Size.<br>
-    Replace this line with the word count or, short reed, long reed, length of video, etc.
-    <!-- never remove this line -->
-    That completes the Summary. The Web page content starts now.</p>
-    </section></section>
-<!-- Accessible Page Summary - END --></code>
 
-For 100% Text Web Pages
-<code><!-- Accessible Page Summary CSS - BEGIN -->
-<style>/* Opt-Out (default) */.ADA-ps {display: none}/* Opt-In (selectable) */.Summary-Opt-In:focus+.ADA-ps {display: block}/* WCAG 2.1 AAA */.ada-ps-css-01 {background: #fff; color: #000;display: inline-block; font-size: 1.5rem; line-height: 150%; margin-left: -3000rem; position: absolute; z-index: 997}</style>
-<!-- Accessible Page Summary CSS - END -->
-<!-- FOR 100% TEXT WEB PAGES - ADA P.S. 2 -->
 <!-- Accessible Page Summary - BEGIN -->
-<!-- Passed WCAG 2.1 AAA 08/25/2023 -->
-    <section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
-    <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open.
-    Then use the down arrow.</h2>
-    <button aria-pressed="false" value="Open" class="Summary-Opt-In">Open</button>
-    <section role="complementary" aria-label="Note about usage" class="ADA-ps">
-    <p><!-- description -->
-    Web Page Description.<br>
-    Replace this line with a Description of the Web page that does not duplicate the meta description tag.</p>
-    <p><!-- content size -->
-    Content Size.<br>
-    Replace this line with the word count
-    or, short reed, long reed, length of video, etc.
-    <!-- never remove this line -->
-    That completes the Summary.
-    The Web page content starts now.</p>
-    </section></section>
-<!-- Accessible Page Summary - END --></code>
+<section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
+  <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open. Then use the down arrow.</h2>
+  <button aria-pressed="false" value="Open" class="Summary-Opt-In">Open</button>
+  <section role="complementary" aria-label="Note about usage" class="ADA-ps">
+    <p>Web Page Description.<br>Replace this line with a Description of the Web page that does not duplicate the meta description tag.</p>
+    <p>Alt Text Summary.<br>Replace this line with a very brief summation of all images.</p>
+    <p>Content Size.<br>Replace this line with the word count or length (short read, long read, video length, etc.). That completes the Summary. The Web page content starts now.</p>
+  </section>
+</section>
+<!-- Accessible Page Summary - END -->
+```
 
-For 100% Images Web Pages
-<code><!-- Accessible Page Summary CSS - BEGIN -->
-<style>/* Opt-Out (default) */.ADA-ps {display: none}/* Opt-In (selectable) */.Summary-Opt-In:focus+.ADA-ps {display: block}/* WCAG 2.1 AAA */.ada-ps-css-01 {background: #fff; color: #000;display: inline-block; font-size: 1.5rem; line-height: 150%; margin-left: -3000rem; position: absolute; z-index: 997}</style>
-<!-- Accessible Page Summary CSS - END -->
-<!-- FOR 100% IMAGES WEB PAGES - ADA P.S. 3 -->
-<!-- Accessible Page Summary - BEGIN -->
-<!-- Passed WCAG 2.1 AAA 08/25/2023 -->
-    <section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
-    <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open.
-    Then use the down arrow.</h2>
-    <button aria-pressed="false" value="Open" class="Summary-Opt-In">Open</button>
-    <section role="complementary" aria-label="Note about usage" class="ADA-ps">
-    <p><!-- description -->
-    Web Page Description.<br>
-    Replace this line with a Description of the Web page that does not duplicate the meta description tag.</p>
-    <p><!-- alt text summary -->
-    Alt Text Summary.<br>
-    Replace this line with a very brief summation
-    of all images.</p>
-    <p><!-- never remove this line -->
-    That completes the Summary.
-    The Web page content starts now.</p>
-    </section></section>
-<!-- Accessible Page Summary - END --></code>
+### For 100% Text Web Pages
 
-For 100% Infographic Web Pages
-<code><!-- Accessible Page Summary CSS - BEGIN -->
-<style>/* Opt-Out (default) */.ADA-ps {display: none}/* Opt-In (selectable) */.Summary-Opt-In:focus+.ADA-ps {display: block}/* WCAG 2.1 AAA */.ada-ps-css-01 {background: #fff; color: #000;display: inline-block; font-size: 1.5rem; line-height: 150%; margin-left: -3000rem; position: absolute; z-index: 997}</style>
+```html
+<!-- Accessible Page Summary CSS - BEGIN -->
+<style>
+.ADA-ps { display: none }
+.Summary-Opt-In:focus + .ADA-ps { display: block }
+.ada-ps-css-01 {
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 150%;
+  margin-left: -3000rem;
+  position: absolute;
+  z-index: 997;
+}
+</style>
 <!-- Accessible Page Summary CSS - END -->
-<!-- FOR 100% INFOGRAPHIC WEB PAGES - ADA P.S. 4 -->
+
 <!-- Accessible Page Summary - BEGIN -->
-<!-- Passed WCAG 2.1 AAA 08/25/2023 -->
-    <section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
-    <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open. Then use the down arrow.</h2>
-    <button aria-pressed="false" value="Open" class="Summary-Opt-In">Open</button>
-    <section role="complementary" aria-label="Note about usage" class="ADA-ps">
-    <p><!-- description -->
-    Web Page Description.<br>
-    Replace this line with a Description of the Web page that does not duplicate the meta description tag.</p>
-    <p><!-- alt text summary -->
-    Alt Text Summary.<br>
-    Replace this line with a very brief summation of all images.</p>
-    <p><!-- content size -->
-    Content Size.<br>
-    Replace this line with the word count or, short reed, long reed, length of video, etc.
-    <!-- never remove this line -->
-    That completes the Summary. The infographic content starts now</p>
-    </section>
-    <section role="complementary" aria-label="Note about usage">
+<section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
+  <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open. Then use the down arrow.</h2>
+  <button aria-pressed="false" value="Open" class="Summary-Opt-In">Open</button>
+  <section role="complementary" aria-label="Note about usage" class="ADA-ps">
+    <p>Web Page Description.<br>Replace this line with a Description of the Web page that does not duplicate the meta description tag.</p>
+    <p>Content Size.<br>Replace this line with the word count or length (short read, long read, video length, etc.). That completes the Summary. The Web page content starts now.</p>
+  </section>
+</section>
+<!-- Accessible Page Summary - END -->
+```
+
+### For 100% Images Web Pages
+
+```html
+<!-- Accessible Page Summary CSS - BEGIN -->
+<style>
+.ADA-ps { display: none }
+.Summary-Opt-In:focus + .ADA-ps { display: block }
+.ada-ps-css-01 {
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 150%;
+  margin-left: -3000rem;
+  position: absolute;
+  z-index: 997;
+}
+</style>
+<!-- Accessible Page Summary CSS - END -->
+
+<!-- Accessible Page Summary - BEGIN -->
+<section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
+  <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open. Then use the down arrow.</h2>
+  <button aria-pressed="false" value="Open" class="Summary-Opt-In">Open</button>
+  <section role="complementary" aria-label="Note about usage" class="ADA-ps">
+    <p>Web Page Description.<br>Replace this line with a Description of the Web page that does not duplicate the meta description tag.</p>
+    <p>Alt Text Summary.<br>Replace this line with a very brief summation of all images.</p>
+    <p>That completes the Summary. The Web page content starts now.</p>
+  </section>
+</section>
+<!-- Accessible Page Summary - END -->
+```
+
+### For 100% Infographic Web Pages
+
+```html
+<!-- Accessible Page Summary CSS - BEGIN -->
+<style>
+.ADA-ps { display: none }
+.Summary-Opt-In:focus + .ADA-ps { display: block }
+.ada-ps-css-01 {
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 150%;
+  margin-left: -3000rem;
+  position: absolute;
+  z-index: 997;
+}
+</style>
+<!-- Accessible Page Summary CSS - END -->
+
+<!-- Accessible Page Summary - BEGIN -->
+<section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
+  <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open. Then use the down arrow.</h2>
+  <button aria-pressed="false" value="Open" class="Summary-Opt-In">Open</button>
+  <section role="complementary" aria-label="Note about usage" class="ADA-ps">
+    <p>Web Page Description.<br>Replace this line with a Description of the Web page that does not duplicate the meta description tag.</p>
+    <p>Alt Text Summary.<br>Replace this line with a very brief summation of all images.</p>
+    <p>Content Size.<br>Replace this line with the word count or length (short read, long read, video length, etc.). That completes the Summary. The infographic content starts now.</p>
+  </section>
+  <section role="complementary" aria-label="Note about usage">
     <h2>The infographic content starts now.</h2>
-    <p><!-- complete infographic content -->
-    Infographic Information.<br>
-    Statistics.<br>
-    Facts.<br>
-    Analysis.<br>
-    Takeaway.<br>
-    Sources.<br>
-    <!-- never remove this line -->
-    That completes the Infographic.</p>
-    </section></section>
-<!-- Accessible Page Summary - END --></code>
+    <p>Infographic Information.<br>Statistics.<br>Facts.<br>Analysis.<br>Takeaway...</p>
+  </section>
+</section>
+<!-- Accessible Page Summary - END -->
+```
 
-https://www.gofundme.com/help-me-help-the-blind-use-the-web
+---
+
