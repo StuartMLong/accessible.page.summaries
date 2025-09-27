@@ -72,7 +72,7 @@ I urge the World Wide Web Consortium (W3C) to consider incorporating Accessible 
 
 <!-- Accessible Page Summary - BEGIN -->
 
-<!-- Passed WCAG 2.1 AAA 08/25/2023 -->
+<!-- Passed WCAG 2.2 -->
 
 <section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
 <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open. Then use the down arrow.</h2>
@@ -108,7 +108,7 @@ That completes the Summary. The Web page content starts now.</p>
 
 <!-- Accessible Page Summary - BEGIN -->
 
-<!-- Passed WCAG 2.1 AAA 08/25/2023 -->
+<!-- Passed WCAG 2.2 -->
 
 <section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
 <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open.
@@ -144,7 +144,7 @@ The Web page content starts now.</p>
 
 <!-- Accessible Page Summary - BEGIN -->
 
-<!-- Passed WCAG 2.1 AAA 08/25/2023 -->
+<!-- Passed WCAG 2.2 -->
 
 <section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
 <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open.
@@ -180,7 +180,7 @@ The Web page content starts now.</p>
 
 <!-- Accessible Page Summary - BEGIN -->
 
-<!-- Passed WCAG 2.1 AAA 08/25/2023 -->
+<!-- Passed WCAG 2.2 -->
 
 <section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
 <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open. Then use the down arrow.</h2>
