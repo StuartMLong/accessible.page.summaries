@@ -51,6 +51,14 @@ I urge the World Wide Web Consortium (W3C) to consider incorporating Accessible 
 
 ---
 
+### **CSS**
+
+<!-- Accessible Page Summary CSS - BEGIN -->
+<style>/* Opt-Out (default) */.ADA-ps {display: none}/* Opt-In (selectable) */.Summary-Opt-In:focus+.ADA-ps {display: block}/* WCAG 2.1 AAA */.ada-ps-css-01 {background: #fff; color: #000;display: inline-block; font-size: 1.5rem; line-height: 150%; margin-left: -3000rem; position: absolute; z-index: 997}</style>
+<!-- Accessible Page Summary CSS - END -->
+
+---
+
 ### **For Typical Web Pages**
 
 ```html
