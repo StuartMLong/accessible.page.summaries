@@ -171,31 +171,35 @@ The Web page content starts now.</p>
 ### **For 100% Infographic Web Pages**
 
 ```html
-<!-- Accessible Page Summary CSS - BEGIN -->
-<!-- CSS and HTML -->
-<style>/* Opt-Out (default) */.ADA-ps {display: none}/* Opt-In (selectable) */.Summary-Opt-In:focus+.ADA-ps {display: block}/* WCAG 2.1 AAA */.ada-ps-css-01 {background: #fff; color: #000;display: inline-block; font-size: 1.5rem; line-height: 150%; margin-left: -3000rem; position: absolute; z-index: 997}</style>
-<!-- Accessible Page Summary CSS - END -->
-
-<!-- FOR 100% INFOGRAPHIC WEB PAGES - ADA P.S. 4 -->
-
-<!-- Accessible Page Summary - BEGIN -->
-
+<!-- FOR 100% INFOGRAPHIC Web PAGES - ADA P.S. 4 -->
+<!-- Accessible Page Summary | https://adasummary.top | BEGIN -->
 <!-- Passed WCAG 2.2 -->
-
-<section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
-<h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open. Then use the down arrow.</h2>
-<button aria-pressed="false" value="Open" class="Summary-Opt-In">Open</button>
-<section role="complementary" aria-label="Note about usage" class="ADA-ps">
-<p><!-- description -->
-Web Page Description.<br>
-Replace this line with a Description of the Web page that does not duplicate the meta description tag.</p>
-<p><!-- alt text summary -->
-Alt Text Summary.<br>
-Replace this line with a...
-</p>
-<p><!-- never remove this line -->
-That completes the Summary.
-The Web page content starts now.</p>
-</section></section>
-
+    <section role="complementary" aria-label="Note about usage" class="ada-ps-css-01">
+    <h2>To Hear a Brief Summary of This Web Page Including Content Size Click Open. Then use the down arrow.</h2>
+    <button aria-pressed="false" value="Open" class="Summary-Opt-In">Open</button>
+    <section role="contentinfo" aria-label="Web page summary" class="ADA-ps">
+    <p><!-- description -->
+    Web Page Description.<br>
+    Replace this line with a Description of the Web page that does not duplicate the meta description tag.</p>
+    <p><!-- alt text summary -->
+    Alt Text Summary.<br>
+    Replace this line with a very brief summation of all images.</p>
+    <p><!-- content size -->
+    Content Size.<br>
+    Replace this line with the word count or, short reed, long reed, length of video, etc.
+    <!-- never remove this line -->
+    That completes the Summary. The infographic content starts now</p>
+    </section>
+    <section role="complementary" aria-label="Note about usage">
+    <h2>The infographic content starts now.</h2>
+    <p><!-- complete infographic content -->
+    Infographic Information.<br>
+    Statistics.<br>
+    Facts.<br>
+    Analysis.<br>
+    Takeaway.<br>
+    Sources.<br>
+    <!-- never remove this line -->
+    That completes the Infographic.</p>
+    </section></section>
 <!-- Accessible Page Summary - END -->
