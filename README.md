@@ -188,7 +188,7 @@ The Web page content starts now.</p>
     Content Size.<br>
     Replace this line with the word count or, short reed, long reed, length of video, etc.
     <!-- never remove this line -->
-    That completes the Summary. The infographic content starts now</p>
+    That completes the Summary.</p>
     </section>
     <section role="complementary" aria-label="Note about usage">
     <h2>The infographic content starts now.</h2>
