@@ -22,7 +22,7 @@ Accessible Page Summaries offer a practical and effective way to bridge the acce
 * **Non-Intrusive Design**: Accessible Page Summaries are designed to be invisible to sighted users and will not alter the appearance of standards-compliant web pages.
 * **Zero Dependencies**: Ensures reliable functionality, even offline, without reliance on external resources or CDNs.
 * **Integrated Implementation**: Embedding the summary within the page eliminates the risk of URL and redirect errors.
-* **WCAG 2.1 AAA Compliance**: Adheres to the highest accessibility standards.
+* **WCAG 2.2 Compliance**: Adheres to the highest accessibility standards.
 
 ## Technical Implementation
 
